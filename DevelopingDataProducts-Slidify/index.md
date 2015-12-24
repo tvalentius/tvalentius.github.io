@@ -26,11 +26,28 @@ GDP per capita is gross domestic product divided by midyear population. GDP is t
 
 *http://data.worldbank.org/indicator/NY.GDP.PCAP.CD
 
+## How to use
+
+- On the left hand side of the panel, select the year that you want to see
+- click/tap "Submit" button
+
 --- .class #id 
 
 ## Example Report
+![width](assets/img/example.png)
 
-- Map view here
+## Some sample snippet
+
+
+```r
+      world_map$gdp_percapita <- nchar(dt[ , year]) + sample(nrow(world_map))
+      
+      # Prepare map based on GDP data
+      gg <- ggplot(world_map,aes(map_id=region))  
+      gg <- gg + geom_map(data=world_map, map=world_map, aes(map_id=region, x=long, y=lat)
+        
+      )
+```
 
 --- .class #id 
 

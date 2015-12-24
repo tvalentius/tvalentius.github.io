@@ -65,6 +65,13 @@
 
 <p>*<a href="http://data.worldbank.org/indicator/NY.GDP.PCAP.CD">http://data.worldbank.org/indicator/NY.GDP.PCAP.CD</a></p>
 
+<h2>How to use</h2>
+
+<ul>
+<li>On the left hand side of the panel, select the year that you want to see</li>
+<li>click/tap &quot;Submit&quot; button</li>
+</ul>
+
   </article>
   <!-- Presenter Notes -->
 </slide>
@@ -74,9 +81,18 @@
     <h2>Example Report</h2>
   </hgroup>
   <article data-timings="">
-    <ul>
-<li>Map view here</li>
-</ul>
+    <p><img src="assets/img/example.png" alt="width"></p>
+
+<h2>Some sample snippet</h2>
+
+<pre><code class="r">      world_map$gdp_percapita &lt;- nchar(dt[ , year]) + sample(nrow(world_map))
+
+      # Prepare map based on GDP data
+      gg &lt;- ggplot(world_map,aes(map_id=region))  
+      gg &lt;- gg + geom_map(data=world_map, map=world_map, aes(map_id=region, x=long, y=lat)
+
+      )
+</code></pre>
 
   </article>
   <!-- Presenter Notes -->
