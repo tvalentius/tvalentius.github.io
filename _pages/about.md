@@ -6,7 +6,7 @@ subtitle: I build AI products and tech communities across Asia Pacific 🚀🤖�
 
 profile:
   align: right
-  image: prof_pic.jpg  # put your photo in assets/img/
+  image: prof_pic.jpg 
   image_circular: false
 
 news: false
@@ -64,7 +64,7 @@ I regularly speak at conferences and meetups about AI, developer communities, an
 
 ## Writing
 
-Coming soon — thoughts on AI, developer relations, and building in Southeast Asia.
+Coming soon — thoughts on AI, cybersecurity, cyberintelligence, developer relations, and building in Southeast Asia.
 
 ---
 
